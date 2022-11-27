@@ -34,6 +34,31 @@ docker run --rm \
     axelrindle/volume-backup
 ```
 
+Output:
+
+```
+
+             _                             _                _
+            | |                           | |              | |
+ __   _____ | |_   _ _ __ ___   ___ ______| |__   __ _  ___| | ___   _ _ __
+ \ \ / / _ \| | | | | '_ ` _ \ / _ \______| '_ \ / _` |/ __| |/ / | | | '_ \
+  \ V / (_) | | |_| | | | | | |  __/      | |_) | (_| | (__|   <| |_| | |_) |
+   \_/ \___/|_|\__,_|_| |_| |_|\___|      |_.__/ \__,_|\___|_|\_\\__,_| .__/
+                                                                      | |
+                                                                      |_|
+
+
+We're gonna pack an estimate of 34.3M. Please be patient...
+
++ tar c -f /backup/important.tar -C /volume .
++ pigz /backup/important.tar
++ chown 1000:1000 /backup/important.tar.gz
++ set +x
+
+We're done here.
+
+```
+
 ## License
 
 [MIT](LICENSE)
